@@ -87,25 +87,25 @@ git commit -m "Modify item #4"
 $ git log
 commit f26b2df0336dada958b67e7a741a8621afd8c364 (HEAD -> branch2)
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 16:20:24 2022 +0200
+Date:  Mon Mar 28 19:30:02 2022 +0200
 
     Modify item #4
 
 commit d62d122b47d0015b1bdae894385aab2252a9fae2 (origin/branch2)
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 15:48:15 2022 +0200
+Date:  Mon Mar 28 18:50:13 2022 +0200
 
     Add quantities to the items
 
 commit 811078b8269bf27db96908e26349f9dfbc52a572
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 15:40:06 2022 +0200
+Date:    Mon Mar 28 18:42:04 2022 +0200
 
     Add 5 items to the shopping list
 
 commit fca898a97eec0f3dd9e600b1e3a600c6c61739f5
 Author: dijanaandova <86987286+dijanaandova@users.noreply.github.com>
-Date:   Thu Mar 31 15:05:40 2022 +0200
+Date:   Mon Mar 28 18:27:12 2022 +0200
 
     Initial commit
 
@@ -115,7 +115,7 @@ Date:   Thu Mar 31 15:05:40 2022 +0200
 $ git log
 commit b40b13d42af2c42350b7cf47ee24e62c7384257f (HEAD -> branch2)
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 16:20:24 2022 +0200
+Date:   Thu Mar 31 19:42:30 2022 +0200
 
     Modify item #4 and add item #6
 
@@ -123,19 +123,19 @@ Date:   Thu Mar 31 16:20:24 2022 +0200
 
 commit d62d122b47d0015b1bdae894385aab2252a9fae2 (origin/branch2)
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 15:48:15 2022 +0200
+Date:   Mon Mar 28 18:50:13 2022 +0200
 
     Add quantities to the items
 
 commit 811078b8269bf27db96908e26349f9dfbc52a572
 Author: Dijana <dijana.andova@students.finki.ukim.mk>
-Date:   Thu Mar 31 15:40:06 2022 +0200
+Date:   Mon Mar 28 18:42:04 2022 +0200
 
     Add 5 items to the shopping list
 
 commit fca898a97eec0f3dd9e600b1e3a600c6c61739f5
 Author: dijanaandova <86987286+dijanaandova@users.noreply.github.com>
-Date:   Thu Mar 31 15:05:40 2022 +0200
+Date:  Mon Mar 28 18:27:12 2022 +0200
 
     Initial commit
 
