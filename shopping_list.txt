@@ -1,5 +1,5 @@
-1. Eggs
-2. Bread
-3. Tomatoes
-4. Avocado
-5. Orange juice
+1. Eggs x5
+2. Bread x1
+3. Tomatoes x4
+4. Avocado x2
+5. Orange juice x2
