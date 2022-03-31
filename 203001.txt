@@ -1,0 +1,182 @@
+СИ Лаб1 
+Дијана Андова 2030001
+
+1. Креиран профил dijanaandova
+
+2. Главна гранка со име master
+
+3. Креиран оддалечен репозиториум именуван SI_2022_lab1_203001
+
+4. Команди:
+mkdir si
+cd si
+git init
+git remote add origin
+git remote -v
+git clone https://github.com/dijanaandova/SI_2022_lab1_203001.git
+cd SI_2022_lab1_203001
+
+5. Креиран текст документ со производи од шопинг листа.
+Команди:
+touch shopping_list.txt
+git status
+git add shopping_list.txt
+git commit -m "Add 5 items to the shopping list"
+
+6. Команди:
+git add shopping_lista.txt
+git commit -m "Add quantities to the items"
+
+7. Команди:
+git checkout -b branch1
+git checkout -b branch2
+
+8. $ git log
+commit d62d122b47d0015b1bdae894385aab2252a9fae2 (HEAD -> branch2, master, branch1)
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Mon Mar 28 18:50:13 2022 +0200
+
+    Add quantities to the items
+
+commit 811078b8269bf27db96908e26349f9dfbc52a572
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Mon Mar 28 18:42:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fca898a97eec0f3dd9e600b1e3a600c6c61739f5 (origin/master, origin/HEAD)
+Author: dijanaandova <86987286+dijanaandova@users.noreply.github.com>
+Date:   Mon Mar 28 18:27:12 2022 +0200
+
+    Initial commit
+
+9. Команди:
+git push --set-upstream origin branch2
+git checkout branch1
+git push --set-upstream origin branch1
+git checkout master
+git push
+
+10. Команди: 
+git checkout branch1
+
+11. Команди:
+git add shopping_list.txt
+git commit -m "Change quality of item #5"
+
+12. Команди:
+git checkout master
+
+13. Команди:
+git add shopping_list.txt
+git commit -m "Change quality of item #2"
+
+14. Команди:
+git push origin master
+git checkout branch1
+git push origin branch1
+
+15. Команди:
+git checkout branch2
+
+16. Команди:
+git add shopping_list.txt
+git commit -m "Modify item #4"
+
+17. Команди:
+$ git log
+commit f26b2df0336dada958b67e7a741a8621afd8c364 (HEAD -> branch2)
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 16:20:24 2022 +0200
+
+    Modify item #4
+
+commit d62d122b47d0015b1bdae894385aab2252a9fae2 (origin/branch2)
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 15:48:15 2022 +0200
+
+    Add quantities to the items
+
+commit 811078b8269bf27db96908e26349f9dfbc52a572
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 15:40:06 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fca898a97eec0f3dd9e600b1e3a600c6c61739f5
+Author: dijanaandova <86987286+dijanaandova@users.noreply.github.com>
+Date:   Thu Mar 31 15:05:40 2022 +0200
+
+    Initial commit
+
+18. Променето име на ставката бр.4
+
+19. Команди:
+$ git log
+commit b40b13d42af2c42350b7cf47ee24e62c7384257f (HEAD -> branch2)
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 16:20:24 2022 +0200
+
+    Modify item #4 and add item #6
+
+                            # Please enter the commit message for your changes. Lines starting
+
+commit d62d122b47d0015b1bdae894385aab2252a9fae2 (origin/branch2)
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 15:48:15 2022 +0200
+
+    Add quantities to the items
+
+commit 811078b8269bf27db96908e26349f9dfbc52a572
+Author: Dijana <dijana.andova@students.finki.ukim.mk>
+Date:   Thu Mar 31 15:40:06 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fca898a97eec0f3dd9e600b1e3a600c6c61739f5
+Author: dijanaandova <86987286+dijanaandova@users.noreply.github.com>
+Date:   Thu Mar 31 15:05:40 2022 +0200
+
+    Initial commit
+
+20. Команди:
+git checkout master
+git merge branch1
+
+21. Команди:
+git merge branch2 
+Со оваа команда, настанува конфликт помеѓу branch2 и master гранка:
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Разлики:
+$ git diff
+diff --cc shopping_list.txt
+index 4092643,f3c7018..0000000
+--- a/shopping_list.txt
++++ b/shopping_list.txt
+@@@ -1,5 -1,6 +1,11 @@@
+  1. Eggs x5
+  2. Bread x1
+  3. Tomatoes x6
+++<<<<<<< HEAD
+ +4. Avocado x2
+- 5. Orange juice x1
+++5. Orange juice x1
+++=======
++ 4. Cheese x2
++ 5. Orange juice x1
+ -6. Cheese x1
+++6. Cheese x1
+++>>>>>>> branch2
+
+
+22. Команди:
+touch 203001.txt
+git add 203001.txt
+git commit -m "Add docs"
+
+23. Команди:
+git push
+
